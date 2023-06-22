@@ -13,3 +13,5 @@ wandb/*
 
 # IPython checkpoints
 .ipynb_checkpoints
+
+\venv
