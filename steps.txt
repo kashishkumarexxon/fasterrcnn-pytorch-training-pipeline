@@ -1,0 +1,5 @@
+1. Fix new requirements file as per new torch version and run smoke_training
+2. Save train and val images in appropriate folder 
+3. Create annotations format and save annotations in appropriate folder
+4. Create a new config file for new dataset
+5. Run the training for autoddc
