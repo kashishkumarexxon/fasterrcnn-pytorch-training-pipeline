@@ -227,7 +227,7 @@ def main(args):
     SAVE_VALID_PREDICTIONS = data_configs['SAVE_VALID_PREDICTION_IMAGES']
     BATCH_SIZE = args['batch']
     VISUALIZE_TRANSFORMED_IMAGES = args['vis_transformed']
-    OUT_DIR = set_training_dir(args['name'])
+    OUT_DIR = set_training_dir("/dbfs/FileStore/Detection/Object_Detection", args['name'])
     COLORS = np.random.uniform(0, 1, size=(len(CLASSES), 3))
     SCALER = torch.cuda.amp.GradScaler() if args['amp'] else None
     # Set logging file.
