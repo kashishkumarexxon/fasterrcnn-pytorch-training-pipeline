@@ -1,10 +1,10 @@
 # Images and labels directory should be relative to train.py
-TRAIN_DIR_IMAGES: data/smoke_pascal_voc/archive/train/images 
-TRAIN_DIR_LABELS: data/smoke_pascal_voc/archive/train/annotations
+TRAIN_DIR_IMAGES: /dbfs/FileStore/Detection/Object_Detection/autoddc/train/images
+TRAIN_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc/train/annotations
 
 # VALID_DIR should be relative to train.py
-VALID_DIR_IMAGES: data/smoke_pascal_voc/archive/val/images
-VALID_DIR_LABELS: data/smoke_pascal_voc/archive/val/annotations
+VALID_DIR_IMAGES: /dbfs/FileStore/Detection/Object_Detection/autoddc/val/images
+VALID_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc/val/annotations
 
 # Class names.
 CLASSES: [

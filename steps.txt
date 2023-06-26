@@ -2,4 +2,4 @@
 2. Save train and val images in appropriate folder 
 3. Create annotations format and save annotations in appropriate folder
 4. Create a new config file for new dataset
-5. Run the training for autoddc
+5. Run the training for autod
