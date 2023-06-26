@@ -50,14 +50,16 @@ def coco_log(log_dir, stats):
     log_dict = {}
     # for i, key in enumerate(log_dict_keys):
     #     log_dict[key] = stats[i]
-
-    with open(f"{log_dir}/train.log", 'a+') as f:
-        f.writelines('\n')
-        for i, key in enumerate(log_dict_keys):
-            out_str = f"{key} = {stats[i]}"
-            logger.debug(out_str) # DEBUG model so as not to print on console.
-        logger.debug('\n'*2) # DEBUG model so as not to print on console.
-    # f.close()
+    try:
+        with open(f"{log_dir}/train.log", 'a+') as f:
+            f.writelines('\n')
+            for i, key in enumerate(log_dict_keys):
+                out_str = f"{key} = {stats[i]}"
+                logger.debug(out_str) # DEBUG model so as not to print on console.
+            logger.debug('\n'*2) # DEBUG model so as not to print on console.
+        f.close()
+    except Exception as e:
+        print(f"Error writing to log file: {e}")
 
 def set_summary_writer(log_dir):
     writer = SummaryWriter(log_dir=log_dir)
