@@ -10,7 +10,7 @@ VALID_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc/val/annotat
 CLASSES: [
     '__background__',
     'Pipe', 
-    'PipeSupport'
+    'PipeSupport',
     'Flange',  
     'FlangeFastener'
 ]
