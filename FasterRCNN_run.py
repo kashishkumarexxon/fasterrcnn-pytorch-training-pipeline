@@ -1,18 +1,18 @@
 # Databricks notebook source
-!pwd
+!git clone -b autoddc https://github.com/kashishkumarexxon/fasterrcnn-pytorch-training-pipeline.git
+
+# COMMAND ----------
+
+# MAGIC %cd fasterrcnn-pytorch-training-pipeline
+
+# COMMAND ----------
+
+!ls
 
 # COMMAND ----------
 
 # MAGIC %sh
 # MAGIC pip install -r requirements.txt
-
-# COMMAND ----------
-
-!pip uninstall torch==1.12.1+cu113
-
-# COMMAND ----------
-
-!pip install albumentations
 
 # COMMAND ----------
 
@@ -38,7 +38,12 @@ else:
 # COMMAND ----------
 
 # MAGIC %sh
-# MAGIC python train.py --data data_configs/autoddc.yaml --epochs 100 --model fasterrcnn_resnet50_fpn --name autoddc --batch 16 
+# MAGIC export CUDA_VISIBLE_DEVICES=""
+
+# COMMAND ----------
+
+# MAGIC %sh
+# MAGIC python train.py --data data_configs/autoddc.yaml --epochs 100 --model fasterrcnn_resnet50_fpn --name autoddc --batch 16 --device cpu
 
 # COMMAND ----------
 

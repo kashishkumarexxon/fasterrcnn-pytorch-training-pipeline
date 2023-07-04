@@ -19,7 +19,7 @@ CLASSES: [
 ]
 
 # Number of classes (object classes + 1 for background class in Faster RCNN).
-NC: 5
+NC: 8
 
 # Whether to save the predictions of the validation set while training.
 SAVE_VALID_PREDICTION_IMAGES: True
