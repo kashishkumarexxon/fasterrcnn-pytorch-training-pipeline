@@ -245,8 +245,8 @@ def main(args):
         IMAGE_SIZE, 
         CLASSES,
         use_train_aug=args['use_train_aug'],
-        no_mosaic=args['no_mosaic'],
-        square_training=args['square_training']
+        no_mosaic=args['no_mosaic'],            # check
+        square_training=args['square_training'] #check
     )
     valid_dataset = create_valid_dataset(
         VALID_DIR_IMAGES, 
