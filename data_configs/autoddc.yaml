@@ -1,10 +1,10 @@
 # Images and labels directory should be relative to train.py
-TRAIN_DIR_IMAGES: /dbfs/FileStore/Detection/Object_Detection/autoddc/train/images
-TRAIN_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc/train/annotations
+TRAIN_DIR_IMAGES: /dbfs/FileStore/Detection/Object_Detection/autoddc_new2/train/images
+TRAIN_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc_new2/train/annotations
 
 # VALID_DIR should be relative to train.py
-VALID_DIR_IMAGES: /dbfs/FileStore/Detection/Object_Detection/autoddc/val/images
-VALID_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc/val/annotations
+VALID_DIR_IMAGES: /dbfs/FileStore/Detection/Object_Detection/autoddc_new2/val/images
+VALID_DIR_LABELS: /dbfs/FileStore/Detection/Object_Detection/autoddc_new2/val/annotations
 
 # Class names.
 CLASSES: [
@@ -12,7 +12,10 @@ CLASSES: [
     'Pipe', 
     'PipeSupport',
     'Flange',  
-    'FlangeFastener'
+    'FlangeFastener', 
+    'Valve',
+    'Tee',
+    'Elbow'
 ]
 
 # Number of classes (object classes + 1 for background class in Faster RCNN).
